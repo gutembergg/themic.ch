@@ -1,7 +1,13 @@
 @extends('layouts.app')
 
+
+@section('sidebar')
+    <h1>Sidebar</h1>
+@endsection
+
 @section('content')
-  @include('partials.page-header')
+  {{-- @include('partials.page-header') --}}
+  <h1>Test</h1>
 
   @if (! have_posts())
     <x-alert type="warning">

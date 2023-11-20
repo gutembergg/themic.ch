@@ -134,3 +134,5 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer',
     ] + $config);
 });
+
+add_image_size( 'slider', 1920, 500, true );

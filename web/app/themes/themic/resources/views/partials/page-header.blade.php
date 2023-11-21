@@ -4,8 +4,7 @@
 
   @endphp
 
-  <div class="banner-frontPage">
-    <p>Test</p>
+  <div class="banner-frontPage__image">
     @php
      echo wp_get_attachment_image(get_field("front_page_banner"), $size);
     @endphp

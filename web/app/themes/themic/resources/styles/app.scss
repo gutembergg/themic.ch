@@ -2,7 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-.banner {
-  min-width: 1600px;
-  max-height: 400px;
-}
+@import './scss/components/front-page-banner.scss';

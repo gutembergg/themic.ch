@@ -135,4 +135,7 @@ add_action('widgets_init', function () {
     ] + $config);
 });
 
-add_image_size( 'slider', 1920, 500, true );
+
+add_action( 'after_setup_theme', function () {
+	add_image_size( 'slider', 1920, 960 );
+} );

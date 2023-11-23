@@ -1,5 +1,7 @@
 import domReady from '@roots/sage/client/dom-ready';
 
+import './src/ui-components/Swiper';
+
 /**
  * Application entrypoint
  */

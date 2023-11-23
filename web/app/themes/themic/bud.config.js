@@ -32,6 +32,8 @@ export default async (app) => {
    * @see {@link https://bud.js.org/docs/bud.setProxyUrl}
    * @see {@link https://bud.js.org/docs/bud.watch}
    */
+  app.build.rules.css.setInclude([app.path()]);
+
   app
     .setUrl('http://localhost:3000')
     .setProxyUrl('http://themic.ch.lndo.site')

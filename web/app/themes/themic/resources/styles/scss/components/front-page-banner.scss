@@ -1,7 +1,6 @@
 .banner-frontPage {
-  p {
-    color: red;
-  }
+  position: relative;
+
   &__image {
     width: 100%;
     height: 100%;
@@ -15,6 +14,18 @@
       -o-animation: move 40s infinite ease-in-out;
       -moz-animation: move 40s infinite ease-in-out;
     }
+  }
+
+  &__content {
+    position: absolute;
+    top: 100px;
+    left: $space-10;
+    z-index: 999;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    max-width: 450px;
+    line-height: 1.5;
   }
 }
 

@@ -1,0 +1,18 @@
+.theNavigationWrapper {
+  @media (max-width: 1024px) {
+    //display: none;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background: white;
+  }
+}
+
+.thePrimaryNavigation {
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

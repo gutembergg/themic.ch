@@ -1,6 +1,7 @@
 import domReady from '@roots/sage/client/dom-ready';
 
 import './src/ui-components/Swiper';
+import './src/ui-components/theMobileNavigation';
 
 /**
  * Application entrypoint

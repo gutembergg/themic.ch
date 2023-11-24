@@ -11,7 +11,7 @@
            echo get_field("front_page_banner_text")
           @endphp
         </div>
-        @php echo wp_get_attachment_image(get_field("front_page_banner"), $size); @endphp
+        @php echo wp_get_attachment_image(get_field("front_page_banner"), $size, false,  array( "class" => "img-mobile" )); @endphp
       </div>
       <div class="swiper-slide banner-frontPage__image">
         <div class="banner-frontPage__content text-5xl">
@@ -19,7 +19,7 @@
            echo get_field("front_page_banner_text_2")
           @endphp
         </div>
-        @php echo wp_get_attachment_image(get_field("front_page_banner_2"), $size); @endphp
+        @php echo wp_get_attachment_image(get_field("front_page_banner_2"), $size, false, array( "class" => "img-mobile" )); @endphp
       </div>
     </div>
   

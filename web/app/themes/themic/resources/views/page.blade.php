@@ -7,4 +7,5 @@
     @include('partials.front-page-banner')
     @includeFirst(['partials.content-page', 'partials.content'])
   @endwhile
+  
 @endsection

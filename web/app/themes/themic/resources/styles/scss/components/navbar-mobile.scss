@@ -1,0 +1,36 @@
+.theNavigationWrapper {
+  @media (max-width: 1024px) {
+    position: fixed;
+    top: 10.7%;
+    left: 0;
+    width: 100vw;
+    min-height: 500px;
+    text-align: center;
+    transform: translateX(+100%);
+    z-index: 2;
+    background: white;
+    transition: transform 0.2s ease;
+
+    box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.2),
+      0 11px 15px -7px rgba(0, 0, 0, 0.14), 0 24px 38px 3px rgba(0, 0, 0, 0.12);
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+}
+
+.theMobileNavigation {
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    line-height: $space-16;
+    padding: 2rem;
+    z-index: 2;
+    overflow: hidden;
+  }
+}
+
+.img-mobile {
+  min-height: 350px;
+}

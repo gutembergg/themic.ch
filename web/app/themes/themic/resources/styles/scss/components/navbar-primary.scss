@@ -5,21 +5,41 @@
 
 .menu-item-has-children {
   position: relative;
-  &:hover {
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      position: absolute;
-      top: 20px;
-      left: 0;
-      min-width: 200px;
-      background: white;
-      padding: 2rem 1rem;
+
+  @media (min-width: 1024px) {
+    &:hover {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        min-width: 200px;
+        background: white;
+        padding: 2rem 1rem;
+      }
     }
   }
+
+  /* @media (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:after {
+      content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+    }
+  } */
 }
 
-.menu-item-has-children ul {
+.menu-item-has-children ul > li {
   display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+    position: absolute;
+    top: 10;
+    left: 30px;
+    line-height: $space-10;
+  }
 }

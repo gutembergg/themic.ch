@@ -6,7 +6,7 @@
   <div class="swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide banner-frontPage__image">
-        <div class="banner-frontPage__content text-5xl">
+        <div class="banner-frontPage__content theMobileNavigation__content text-5xl">
           @php
            echo get_field("front_page_banner_text")
           @endphp
@@ -14,7 +14,7 @@
         @php echo wp_get_attachment_image(get_field("front_page_banner"), $size, false,  array( "class" => "img-mobile" )); @endphp
       </div>
       <div class="swiper-slide banner-frontPage__image">
-        <div class="banner-frontPage__content text-5xl">
+        <div class="banner-frontPage__content theMobileNavigation__content text-5xl">
           @php
            echo get_field("front_page_banner_text_2")
           @endphp

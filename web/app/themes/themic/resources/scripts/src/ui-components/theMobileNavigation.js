@@ -4,6 +4,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   btnToggle.addEventListener('click', () => {
     theNavigationWrapper.classList.toggle('active');
-    console.log('Click', theNavigationWrapper);
   });
 });

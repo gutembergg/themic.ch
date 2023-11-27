@@ -5,7 +5,9 @@
 @import 'swiper/swiper-bundle.css';
 
 @import './scss/1_settings/spacings.scss';
-@import './scss/components/front-page-banner.scss';
+@import './scss/2_elements/page-header.scss';
+@import './scss/components/front-page.scss';
+@import './scss/components/card.scss';
 @import './scss/components/navbar-primary.scss';
 @import './scss/components/navbar-mobile.scss';
 @import './scss/elements/links.scss';

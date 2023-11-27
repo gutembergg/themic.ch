@@ -5,18 +5,34 @@
 
 <?php  
 
-$query = new WP_Query( array( 'post_type' => 'post' ) );
+$isFrontPage = is_front_page();
 
-if ($query->have_posts()) :
-    
-  while ($query->have_posts()) : 
-    
-    $query->the_post(); ?>
+$query = new WP_Query( 
+  [ 
+    'post_type' => 'post',
+    'meta_key' => 'visible_in_home_page',
+    'meta_value' => true 
+  ]
+);
 
-    <?php the_title(); ?>
+if ($isFrontPage && $query->have_posts()) :
+?>
 
-<?php endwhile;
-endif; ?>
+<h3 class="text-3xl font-semibold text-slate-500 text-center mb-16">Nos recommandations</h3>
+
+
+<div class="mx-auto max-w-[90vw] front-page__posts">
+  <?php
+
+    while ($query->have_posts()) : 
+      
+      $query->the_post(); ?>
+
+      @include('partials.components.card')
+
+  <?php endwhile;
+  endif; ?>
+</div>
 
 
 

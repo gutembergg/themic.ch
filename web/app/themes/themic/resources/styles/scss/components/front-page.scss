@@ -95,3 +95,13 @@
     /* Firefox */
   }
 }
+
+.front-page {
+  &__posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    justify-items: center;
+    height: 100vh;
+  }
+}

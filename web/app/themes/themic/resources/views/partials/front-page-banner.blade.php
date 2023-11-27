@@ -1,4 +1,4 @@
-<div class="page-header">
+<div id="banner" class="page-header">
     @php
      $size = 'slider';
     @endphp

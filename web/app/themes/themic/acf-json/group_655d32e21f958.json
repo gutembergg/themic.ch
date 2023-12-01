@@ -25,7 +25,7 @@
         {
             "key": "field_656511e8deb1e",
             "label": "Contenu",
-            "name": "contenu",
+            "name": "content",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -45,7 +45,7 @@
         {
             "key": "field_6569eff7f8de5",
             "label": "Lien PDF",
-            "name": "lien_pdf",
+            "name": "link_pdf",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -81,5 +81,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1701441588
+    "modified": 1701466428
 }

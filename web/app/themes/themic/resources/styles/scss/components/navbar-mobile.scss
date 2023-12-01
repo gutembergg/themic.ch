@@ -28,22 +28,3 @@
     overflow: hidden;
   }
 }
-
-.img-mobile {
-  display: none;
-
-  @media (max-width: 900px) {
-    display: block;
-    height: 500px;
-  }
-
-  @media (max-width: 600px) {
-    display: block;
-    height: 400px;
-  }
-
-  @media (max-width: 600px) {
-    display: block;
-    height: 300px;
-  }
-}

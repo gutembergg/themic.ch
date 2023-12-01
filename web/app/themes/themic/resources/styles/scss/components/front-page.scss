@@ -37,8 +37,15 @@
 
   @media (max-width: 764px) {
     &__content {
-      max-width: 40%;
-      font-size: 1.8rem;
+      max-width: 60%;
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__content {
+      max-width: 70%;
+      font-size: 2rem;
     }
   }
 }
@@ -103,5 +110,30 @@
     gap: 3rem;
     justify-items: center;
     height: 100vh;
+  }
+}
+
+.img-desktop {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.img-mobile {
+  display: none;
+
+  @media (max-width: 900px) {
+    display: block;
+    height: 500px;
+  }
+
+  @media (max-width: 600px) {
+    display: block;
+    height: 400px;
+  }
+
+  @media (max-width: 380px) {
+    display: block;
+    height: 350px;
   }
 }

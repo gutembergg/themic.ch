@@ -139,3 +139,8 @@ add_action('widgets_init', function () {
 add_action( 'after_setup_theme', function () {
 	add_image_size( 'slider', 1920, 960 );
 } );
+
+
+add_filter( 'acf/settings/save_json', function ( $path ) {
+    return get_stylesheet_directory() . '/acf-json';
+} );

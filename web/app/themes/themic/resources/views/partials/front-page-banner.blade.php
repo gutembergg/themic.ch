@@ -11,7 +11,8 @@
            echo get_field("front_page_banner_text")
           @endphp
         </div>
-        @php echo wp_get_attachment_image(get_field("front_page_banner"), $size, false,  array( "class" => "img-mobile" )); @endphp
+        @php echo wp_get_attachment_image(get_field("front_page_banner"), $size, false,  array( "class" => "img-desktop" )); @endphp
+        @php echo wp_get_attachment_image(get_field("front_page_banner_mobile_image"), 'large', false,  array( "class" => "img-mobile" )); @endphp
       </div>
       <div class="swiper-slide banner-frontPage__image">
         <div class="banner-frontPage__content theMobileNavigation__content text-5xl">
@@ -19,13 +20,10 @@
            echo get_field("front_page_banner_text_2")
           @endphp
         </div>
-        @php echo wp_get_attachment_image(get_field("front_page_banner_2"), $size, false, array( "class" => "img-mobile" )); @endphp
+        @php echo wp_get_attachment_image(get_field("front_page_banner_2"), $size, false, array( "class" => "img-desktop" )); @endphp
+        @php echo wp_get_attachment_image(get_field("front_page_banner_mobile_image_2"), 'large', false,  array( "class" => "img-mobile" )); @endphp
       </div>
     </div>
-  
-  {{--   <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> --}}
-  
   </div>
   
   

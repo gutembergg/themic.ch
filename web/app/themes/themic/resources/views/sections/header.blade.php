@@ -1,7 +1,7 @@
 <header>
-  <a class="brand" href="{{ home_url('/') }}">
-   {{--  {!! $siteName !!} --}}
-  </a>
+{{--   <a class="brand" href="{{ home_url('/') }}">
+   {!! $siteName !!} 
+  </a> --}}
 
   @if (has_nav_menu('primary_navigation'))
     <nav class="thePrimaryNavigation flex items-center justify-between flex-wrap bg-white w-full 

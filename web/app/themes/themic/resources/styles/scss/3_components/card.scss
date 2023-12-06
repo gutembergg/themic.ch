@@ -1,0 +1,17 @@
+.card {
+  &__img {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+.default-card {
+  text-decoration: none !important;
+
+  p {
+    color: white;
+  }
+
+  &__content {
+  }
+}

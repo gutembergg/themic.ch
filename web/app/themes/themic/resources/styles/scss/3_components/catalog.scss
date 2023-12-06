@@ -1,0 +1,20 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: $space-10;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+  }
+
+  &__title {
+    color: gray;
+  }
+}

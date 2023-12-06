@@ -6,9 +6,13 @@
 
 @import './scss/1_settings/spacings.scss';
 @import './scss/2_elements/page-header.scss';
-@import './scss/components/front-page.scss';
-@import './scss/components/catalog.scss';
-@import './scss/components/card.scss';
-@import './scss/components/navbar-primary.scss';
-@import './scss/components/navbar-mobile.scss';
-@import './scss/elements/links.scss';
+@import './scss/2_elements/pages.scss';
+@import './scss/2_elements/links.scss';
+@import './scss/2_elements/main.scss';
+@import './scss/2_elements/footer.scss';
+@import './scss/3_components/front-page.scss';
+@import './scss/3_components/catalog.scss';
+@import './scss/3_components/card.scss';
+@import './scss/3_components/grids.scss';
+@import './scss/3_components/navbar-primary.scss';
+@import './scss/3_components/navbar-mobile.scss';

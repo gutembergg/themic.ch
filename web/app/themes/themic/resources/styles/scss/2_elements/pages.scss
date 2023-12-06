@@ -1,0 +1,30 @@
+.pages {
+  &__order {
+    height: 100vh;
+  }
+
+  &__order-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: $space-16;
+  }
+
+  &__order-title {
+    font-size: 2rem;
+    color: gray;
+  }
+
+  &__order-description {
+    padding-top: 0.6rem;
+    color: gray;
+  }
+
+  &__order-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: $space-16;
+  }
+}

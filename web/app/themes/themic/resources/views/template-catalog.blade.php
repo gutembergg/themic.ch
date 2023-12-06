@@ -17,7 +17,6 @@
   ]
 );
 
-$posts = $query->posts;
 @endphp
 
 
@@ -25,20 +24,27 @@ $posts = $query->posts;
 
 @section('content')
 
-@foreach ($posts as $post)
-    <div> <?php $post ?></div>
 
-@endforeach
+<?php
+    if ($query->have_posts()) :
+?>
 
+<div class="catalog">
+  <h1 class="catalog__title text-4xl font-semibold mb-10">Notre Catalogue</h1>
 
- {{--  @while($query->have_posts()) @php(the_post())
+  <div class="mx-auto max-w-[90vw] grid__posts">
+    @while($query->have_posts()) @php($query->the_post())
 
- 
-    @include('partials.page-header')
-    @include('partials.content-page')
-    <div class="catalog">
-      <h1>Catalogue2222</h1>
-    </div>
-    
-  @endwhile --}}
+    @include('partials.components.card')
+        
+    @endwhile
+  </div>
+
+</div>
+
+<?php
+wp_reset_postdata();
+  endif; 
+?>
+
 @endsection

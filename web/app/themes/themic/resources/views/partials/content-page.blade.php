@@ -21,7 +21,7 @@ if ($isFrontPage && $query->have_posts()) :
 <h3 class="text-3xl font-semibold text-slate-500 text-center mb-16">Nos recommandations</h3>
 
 
-<div class="mx-auto max-w-[90vw] front-page__posts">
+<div class="mx-auto max-w-[90vw] grid__posts">
   <?php
 
     while ($query->have_posts()) : 
@@ -31,8 +31,12 @@ if ($isFrontPage && $query->have_posts()) :
       @include('partials.components.card')
 
   <?php endwhile;
-  endif; ?>
+?>
 </div>
+<?php
+  endif; 
+?>
+
 
 
 
